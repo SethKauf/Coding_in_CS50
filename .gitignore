@@ -1,0 +1,15 @@
+# Ignore object files and compiled binaries
+*.o
+*.out
+*.exe
+*.a
+*.so
+
+# Ignore compiled binary files
+compare
+mario
+mario2
+agree
+hello
+meow
+test
