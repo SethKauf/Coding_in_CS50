@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    // || means or while && means and
     char c = get_char("Do you agree? ");
 
     if (c == 'y' || c == 'Y')
@@ -13,4 +14,4 @@ int main(void)
     {
         printf("Not agreed.\n");
     }
-}
+} 
