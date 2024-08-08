@@ -130,24 +130,32 @@ void print_grid5(int size)
 }
 
 // This version worked!
+// Print Grid function
 void print_grid_working(int size)
 {
+    // First for-loop ensures that we're starting at 1 and incrimenting until we reach
+    // the size "n"
     for (int i = 1; i <= size; i++)
     {
-        for (int x = size; x > i; x--)
+        // Second for-loop is for the indentation at the start of the pyramid
+        // ie to ensure that we are going the correct "spaces out" from the start to the finish
+        for (int j = size; j > i; j--)
         {
             printf(" ");
         }
-        for (int j = 0; j < i; j++)
-        {
-            printf("#");
-        }
-        printf(" ");
+        // This for loop prints the left-side of the pyramid
         for (int k = 0; k < i; k++)
         {
             printf("#");
         }
+        // Space between left and right sides of pyramid
+        printf("  ");
+        // For loop for the right-hand side of the pyramid
+        for (int x = 0; x < i; x++)
+        {
+            printf("#");
+        }
+        // Ending block special-character to give us a new line
         printf("\n");
     }
-    printf("\n");
 }
